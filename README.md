@@ -70,6 +70,3 @@ AIFFEL_quest
 		    ├── .ipynb
 		    └── README.md		
 ```
-add new contents
-good
-하하
