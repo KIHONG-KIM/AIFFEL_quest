@@ -1,5 +1,7 @@
 ## AIFFEL Campus Quest Repository
 - AIFFEL 과정 중 진행하는 프로젝트, 피어리뷰를 관리하는 Repository입니다.
+- 잘 해봅시다!
+
     - 레포 구조:
 ```bash
 AIFFEL_quest
