@@ -3,6 +3,9 @@
     - 레포 구조:
 ```bash
 AIFFEL_quest
+├── Github_quest
+│   ├── README.md
+│   └── REVIEW.md
 ├── Python_quest
 │   ├── Quest01
 │   │   ├── .ipynb
@@ -41,18 +44,27 @@ AIFFEL_quest
 │   └── Quest07
 │       ├── .ipynb
 │       └── README.md
-└── Flutter_quest
-    ├── Quest01
-    │   ├── TodoApp
-    │   └── README.md
-    ├── Quest02
-    │   ├── TiktokApp
-    │   └── README.md
-    ├── Quest03
-    │   ├── TranslateApp
-    │   └── README.md
-    └── Quest04
-        ├── OCRSTTAPP
-        ├── AIChatAPP
-        └── README.md
+├── Flutter_quest
+│   ├── Quest01
+│   │   ├── MyApp
+│   │   └── README.md
+│   ├── Quest02
+│   │   ├── MyApp
+│   │   └── README.md
+│   ├── Quest03
+│   │   ├── MyApp
+│   │   └── README.md
+│   └── Quest04
+│       ├── MyApp
+│       └── README.md
+└── Main_quest
+		├── Quest01
+		│   ├── .ipynb
+		│   └── README.md
+		├── Quest02
+		│   ├── .ipynb
+		│   └── README.md	
+		└── Quest03
+		    ├── .ipynb
+		    └── README.md		
 ```
