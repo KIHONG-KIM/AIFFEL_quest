@@ -5,35 +5,67 @@
 # PRT(Peer Review Template)
 [X]  **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
 - 문제에서 요구하는 기능이 정상적으로 작동하는지?
+##
+def find_min_max(numbers):
+    # min_value와 max_value 변수를 초기화
+    # min_value는 양의 무한대(float('inf'))로 초기화하여 어떤 숫자보다도 큰 값으로 설정
+    min_value = float('inf')
+    # print("min_value:", min_value)
+    # max_value는 음의 무한대(float('-inf'))로 초기화하여 어떤 숫자보다도 작은 값으로 설정
+    max_value = float('-inf')
 
-    # update_min_max 함수에서 최대값, 최소값 분별
     def update_min_max(num):
-        # 외부함수의 변수인 min_value, max_value 참조 - 조건 2 : 그 내부 함수가 외부 함수의 변수를 참조할 것
-        nonlocal min_value
-        nonlocal max_value
-
+        # 외부함수의 변수인 min_value, max_value 참조
+        # 수정 : global  외부 변수에 접근 사용하여 오류 , nonlocal 내부 함수에서 외부 함수의 변수를 참조
+        nonlocal  min_value,max_value
         # 만약 num 값이 min_value보다 작다면 min_value를 num 값으로 변경
-        if num < min_value:
-            min_value = num
-
+        # print("num < min_value:", num)
+        # print("num < min_value:", min_value)
+        if num < min_value :
+           min_value = num
+          #  print("***:", min_value)
         # 만약 num 값이 max_value보다 크다면 max_value를 num 값으로 변경
-        if num > max_value:
-            max_value = num
-
+        if num > max_value :
+           max_value = num
+          #  print("***@@@ :", max_value)
     # numbers 리스트의 모든 값을 순환하며 최댓값과 최솟값 업데이트
     for num in numbers:
         update_min_max(num)
 
-    # 최솟값을 반환하는 내부함수 - 조건 1: 내부함수
+    # 최솟값을 반환하는 내부함수
     def get_min():
         return min_value
 
-    # 최댓값을 반환하는 내부함수 - 조건 1: 내부함수
+    # 최댓값을 반환하는 내부함수
     def get_max():
         return max_value
 
-    # 외부함수는 내부함수(get_min()과 get_max())를 반환 - 조건 3 : 외부 함수가 내부 함수를 리턴할 것
+
+    # 외부함수는 내부함수(get_min()과 get_max())를 반환
+    # 수정 : 처음엔 get_min()과 get_max()를 호출하였지만, 하단의 오류 발생하여 () 를 제거하니 됨
+    #
+    #     TypeError                                 Traceback (most recent call last)
+    #  in ()
+    #      36 find_min, find_max = find_min_max(numbers)
+    #      37
+    # ---> 38 print("최솟값:", find_min())  # 3
+    #      39 print("최댓값:", find_max())  # 12
+
+    # TypeError: 'int' object is not callable
+    # chatGpt 참조 : () 포함된 코드에서는 get_min()와 get_max() 함수를 호출하여 반환된 값을 반환하게 됩니다. 이는 실제로 최솟값과 최댓값을 반환하게 됩니다.
+    #                () 제거된  코드는 get_min과 get_max 함수 객체를 반환합니다. 이를 통해 반환된 함수를 나중에 호출하여 최솟값과 최댓값을 얻을 수 있습니다.
     return get_min, get_max
+
+numbers = [10, 5, 8, 12, 3, 7]
+# 위의 return 오류를 해결하기 위하여 하단의 코드를 나눠서 수정하기도함
+# find_min = find_min_max(numbers)
+# find_min = find_min_max(numbers)
+# TypeError: 'tuple' object is not callable 오류 발생
+find_min, find_max = find_min_max(numbers)
+
+print("최솟값:", find_min())  # 3
+print("최댓값:", find_max())  # 12
+
      
   # -> 코드 요구하는 기능 정상적으로 잘 작동하고 완벽합니다.!!
     
