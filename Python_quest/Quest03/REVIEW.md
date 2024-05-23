@@ -5,17 +5,6 @@
 # PRT(Peer Review Template)
 [X]  **1. 주어진 문제를 해결하는 완성된 코드가 제출되었나요?**
 - 문제에서 요구하는 기능이 정상적으로 작동하는지?
-# 클로저의 조건
-# 조건 1 : 어떤 함수의 내부 함수일 것
-# 조건 2 : 그 내부 함수가 외부 함수의 변수를 참조할 것
-# 조건 3 : 외부 함수가 내부 함수를 리턴할 것
-
-def find_min_max(numbers):
-    # min_value와 max_value 변수를 초기화
-    # min_value는 양의 무한대(float('inf'))로 초기화하여 어떤 숫자보다도 큰 값으로 설정
-    min_value = float('inf')
-    # max_value는 음의 무한대(float('-inf'))로 초기화하여 어떤 숫자보다도 작은 값으로 설정
-    max_value = float('-inf')
 
     # update_min_max 함수에서 최대값, 최소값 분별
     def update_min_max(num):
