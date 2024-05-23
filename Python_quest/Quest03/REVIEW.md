@@ -57,10 +57,6 @@ def find_min_max(numbers):
     return get_min, get_max
 
 numbers = [10, 5, 8, 12, 3, 7]
-# 위의 return 오류를 해결하기 위하여 하단의 코드를 나눠서 수정하기도함
-# find_min = find_min_max(numbers)
-# find_min = find_min_max(numbers)
-# TypeError: 'tuple' object is not callable 오류 발생
 find_min, find_max = find_min_max(numbers)
 
 print("최솟값:", find_min())  # 3
