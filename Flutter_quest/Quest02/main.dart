@@ -123,6 +123,16 @@ class HomePage extends StatelessWidget {
   }
 }
 
+/*
+처음에는 가장 깔끔한 코드로 적용하려고 했지만, text가 정가운데 오지 않아서 다른 방법을 강구하였다.
+
+appBar: AppBar(
+  leading: Icon(Icons.menu), // 앱바 좌측 상단 아이콘 추가
+  title: Text('플러터 앱 만들기'), // 중앙 텍스트 추가
+  backgroundColor: Colors.blue, // 앱바 색상 파란색
+)
+*/
+
 /* 회고
 
 기홍:
