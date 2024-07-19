@@ -20,6 +20,10 @@
 
 ## 앱 프로토타입 (사용 툴 : FIGMA)
 
+[피그마 프로토타입 재생 링크](https://www.figma.com/proto/vEGlcVKdMtIo8ilziPuiup/first_project?t=PhHVAPRtWCl5VTn4-1)
+
+![AI-UX-4-2-13 original](3_프로토타입.png)
+
 ## 사진 화면
 
 ![image](4_실제구현화면.png)
