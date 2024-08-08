@@ -40,7 +40,7 @@ bert_model = BertModel.from_pretrained(model_name)
 
 # 모델 초기화 및 가중치 로드
 model = BERTClassifier(bert_model=bert_model, num_classes=num_classes)
-model.load_state_dict(torch.load('bert_classifier_fold_dataset2_5.pth', map_location=device), strict=False)
+model.load_state_dict(torch.load('best_model_fold5.pth', map_location=device), strict=False)
 model.to(device)
 model.eval()
 
