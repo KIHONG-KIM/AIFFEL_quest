@@ -30,10 +30,8 @@
 
 ### 제작 앱 이미지
 
-![alt text](image.png)
-
+![alt text](image1.png)
 
 ### 결과물
-
+![alt text](image.png)
 ![alt text](my_plot_20240827_171247.png)
-
